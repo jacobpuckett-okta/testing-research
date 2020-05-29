@@ -1,7 +1,11 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<script>
+
+fetch('https://jacob.workflows.oktapreview.com/api/flo/aa937bfdd64d036392943145b6c89182/invoke')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+  	window.alert(myJson.Username);
+  });
+
+</script>  
